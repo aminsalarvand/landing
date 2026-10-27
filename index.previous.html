@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0f172a;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .html-text {
+            font-size: 120px;
+            font-weight: 900;
+            letter-spacing: 15px;
+            color: white;
+            text-shadow:
+                0 0 10px #ff6b35,
+                0 0 30px #ff6b35,
+                0 0 60px #ff6b35;
+            animation: glow 2s infinite alternate;
+        }
+
+        .subtitle {
+            margin-top: 20px;
+            color: #94a3b8;
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+
+        @keyframes glow {
+            from {
+                transform: scale(1);
+                text-shadow:
+                    0 0 10px #ff6b35,
+                    0 0 30px #ff6b35;
+            }
+
+            to {
+                transform: scale(1.08);
+                text-shadow:
+                    0 0 20px #ff6b35,
+                    0 0 50px #ff6b35,
+                    0 0 90px #ff6b35;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="html-text">HTML</div>
+        <div class="subtitle">HYPER TEXT MARKUP LANGUAGE</div>
+    </div>
+
+</body>
+</html>
